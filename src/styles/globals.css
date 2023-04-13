@@ -1,0 +1,107 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body {
+  background-color: #edf6ff;
+}
+* {
+  scroll-behavior: smooth;
+}
+#spinner {
+  z-index: 1;
+  border: 2.5px solid #5082ff;
+  border-top: 2.5px solid transparent;
+  -webkit-animation: spin 0.7s linear infinite;
+  animation: spin 0.7s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s;
+}
+@-webkit-keyframes animatebottom {
+  from {
+    bottom: -70px;
+    opacity: 0;
+  }
+  to {
+    bottom: 0px;
+    opacity: 1;
+  }
+}
+
+@keyframes animatebottom {
+  from {
+    bottom: -70px;
+    opacity: 0;
+  }
+  to {
+    bottom: 0;
+    opacity: 1;
+  }
+}
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+.pagination a {
+  @apply px-2 sm:px-1 font-light;
+}
+.pagination .next,
+.pagination .previous,
+.pagination .next a,
+.pagination .previous a,
+.pagination .break {
+  border: 0;
+  padding: 0;
+}
+
+.pagination li {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  border: 1px solid #303f606e;
+  cursor: pointer;
+  border-radius: 5px;
+  @apply h-6 sm:h-6 w-4 sm:w-6 min-w-min;
+}
+
+.toast-login {
+  @apply mt-10;
+}
+
+.animate-toast {
+  animation-duration: 0.5s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    right: -200px;
+    opacity: 0;
+  }
+  to {
+    @apply lg:right-[32px] opacity-100;
+  }
+}

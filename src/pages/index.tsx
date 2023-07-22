@@ -2,7 +2,6 @@ import styles from "@/styles/Home.module.css";
 import Link from "next/link";
 import Card from "../@components/LandingPageCard/LandingPageCard";
 
-
 import { useContext } from "react";
 import { Data } from "../ImageJson/Data";
 
@@ -78,21 +77,21 @@ export default function Home() {
                   title1={"Get More"}
                   title2={"Visibility"}
                   description={
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                    "It is a place where you get the visibility you have desiring for. We have what you need!"
                   }
                 />
                 <Card
                   title1={"Organize Your"}
                   title2={"Candidates"}
                   description={
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                    "For the recruiters you can organize your candidates here the way you want to."
                   }
                 />
                 <Card
                   title1={"Verify Their"}
                   title2={"Abilities"}
                   description={
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                    "Verify the abilities here at our site to get a premium job or as premium candidate you are looking for."
                   }
                 />
               </div>
